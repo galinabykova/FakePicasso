@@ -9,7 +9,8 @@ int main()
 	double zeni[size_indata]; std::fill_n(zeni, size_indata, 90);
 	double phases[size_indata * 2]; std::fill_n(phases, 2 * size_indata, 1);
 	double ampl[size_indata * 2]; std::fill_n(ampl, 2 * size_indata, 0.85);
-	double md[size_indata]; for (int i = 0; i < size_indata; i++) md[i] = i * 0.1;
+	double md[size_indata];
+	for (int i = 0; i < size_indata; i++) md[i] = i * 0.1;
 	double tvdstart = 0;
 	double alpha = 0;
 	double rof = 0;

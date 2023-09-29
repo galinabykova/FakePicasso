@@ -11,7 +11,7 @@ namespace {
 	bool IsCorrectProbesNum(const uint16_t nprobes, const uint32_t* num_probe,
 		const std::vector <std::vector<uint32_t>>& supported_probes) {
 		if (nprobes < 1) return false;
-		for (auto v : supported_probes) {
+		for (auto& v : supported_probes) {
 			if (std::find(v.begin(), v.end(), num_probe[0]) != v.end()) {
 				for (int i = 1; i < nprobes; ++i) {
 					auto t = std::find(v.begin(), v.end(), num_probe[i]) == v.end();
